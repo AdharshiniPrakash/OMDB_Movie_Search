@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = import.meta.env.VITE_OMDB_API_URL || 'http://www.omdbapi.com/'
+const API_URL = import.meta.env.VITE_OMDB_API_URL || 'https://www.omdbapi.com/'
 const API_KEY = import.meta.env.VITE_OMDB_API_KEY || ''
 
 if (!API_KEY) {
