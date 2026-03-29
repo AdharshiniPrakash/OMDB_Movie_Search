@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom'
 import './Header.css'
+import logo from '../assets/logo.png';
 
 function Header() {
   return (
     <header className="lumina-header">
       <div className="lumina-brand">
-        <img src="/src/assets/logo.png" alt="Lumina logo" className="lumina-logo-image" />
+        <img src={logo} alt="Lumina logo" className="lumina-logo-image" />
       </div>
       <nav className="lumina-nav">
         <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>
