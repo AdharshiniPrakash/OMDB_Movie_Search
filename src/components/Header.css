@@ -1,0 +1,102 @@
+.lumina-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #121212;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 14px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+@media (max-width: 1024px) {
+  .lumina-header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .lumina-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .lumina-logo-image,
+  .lumina-title {
+    text-align: center;
+  }
+}
+.lumina-brand {
+  display: flex;
+  align-items: center;
+  color: #ffd700;
+  font-family: 'Inter', sans-serif;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.lumina-logo-image {
+  width: 15em;
+  max-width: 150px;
+  height: auto;
+}
+
+.lumina-logo {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffd700;
+  border-radius: 4px;
+  background: rgba(255, 215, 0, 0.1);
+}
+
+.lumina-nav a,
+.favorite-toggle,
+.search-button,
+.back-button {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+@media (max-width: 768px) {
+  .lumina-header {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .lumina-nav {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .lumina-title {
+    font-size: 1rem;
+  }
+}
+.lumina-title {
+  font-size: 1.25rem;
+}
+
+.lumina-nav a {
+  margin-left: 18px;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.lumina-nav a.active {
+  color: #ffd700;
+}
+
+.lumina-nav a:hover {
+  color: #ffd700;
+}
